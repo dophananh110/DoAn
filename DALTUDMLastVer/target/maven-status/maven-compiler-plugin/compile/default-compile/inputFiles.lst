@@ -1,0 +1,16 @@
+C:\DoAnLTUDM1\DALTUDMLastVer\src\main\java\com\ltudm\daltudmlastver\config\JpaAuditingConfig.java
+C:\DoAnLTUDM1\DALTUDMLastVer\src\main\java\com\ltudm\daltudmlastver\controller\input\TinTucInput.java
+C:\DoAnLTUDM1\DALTUDMLastVer\src\main\java\com\ltudm\daltudmlastver\controller\output\TinTucOutput.java
+C:\DoAnLTUDM1\DALTUDMLastVer\src\main\java\com\ltudm\daltudmlastver\controller\TinTucController.java
+C:\DoAnLTUDM1\DALTUDMLastVer\src\main\java\com\ltudm\daltudmlastver\converter\TinTucConverter.java
+C:\DoAnLTUDM1\DALTUDMLastVer\src\main\java\com\ltudm\daltudmlastver\DaltudmLastVerApplication.java
+C:\DoAnLTUDM1\DALTUDMLastVer\src\main\java\com\ltudm\daltudmlastver\dto\AbstractDTO.java
+C:\DoAnLTUDM1\DALTUDMLastVer\src\main\java\com\ltudm\daltudmlastver\dto\TinTucDTO.java
+C:\DoAnLTUDM1\DALTUDMLastVer\src\main\java\com\ltudm\daltudmlastver\entity\BaseEntity.java
+C:\DoAnLTUDM1\DALTUDMLastVer\src\main\java\com\ltudm\daltudmlastver\entity\TheLoaiEntity.java
+C:\DoAnLTUDM1\DALTUDMLastVer\src\main\java\com\ltudm\daltudmlastver\entity\TinTucEntity.java
+C:\DoAnLTUDM1\DALTUDMLastVer\src\main\java\com\ltudm\daltudmlastver\entity\UserEntity.java
+C:\DoAnLTUDM1\DALTUDMLastVer\src\main\java\com\ltudm\daltudmlastver\repository\TheLoaiRepository.java
+C:\DoAnLTUDM1\DALTUDMLastVer\src\main\java\com\ltudm\daltudmlastver\repository\TinTucRepository.java
+C:\DoAnLTUDM1\DALTUDMLastVer\src\main\java\com\ltudm\daltudmlastver\service\impl\TinTucService.java
+C:\DoAnLTUDM1\DALTUDMLastVer\src\main\java\com\ltudm\daltudmlastver\service\ITinTucService.java
