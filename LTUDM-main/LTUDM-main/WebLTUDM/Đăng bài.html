@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Đăng bài</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="TrangChu.html">Trang chủ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="DangNhap.html">Tài khoản</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!">Thông tin chi tiết</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!">Liên hệ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+<body>
+    <main>
+        <section>
+            <h2>Tạo bài viết mới</h2>
+            <form action="submitPost" method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="title">Tiêu đề: </label>
+                    <input type="text" id="title" name="title" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="content">Bài viết:</label>
+                <textarea id="content" name="content" rows="10" required></textarea>
+            </div>
+                <div class="form-group">
+                    <label for="author">Tác giả: </label>
+                    <input type="text" id="author" name="author" required>
+                </div>
+                <div class="form-group">
+                    <label for="category">Thể loại: </label>
+                    <select id="category" name="category" required>
+                        <option value="Thời sự">Thời sự</option>
+                        <option value="Thể thao">Thể thao</option>
+                        <option value="Kinh doanh">Kinh doanh</option>
+                        <option value="Bất động sản">Bất động sản</option>
+                        <option value="Giải trí">Giải trí</option>
+                        <option value="Giáo dục">Giáo dục</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="image">Thumbnail: </label>
+                    <input type="file" id="image" name="image" accept="image/*">
+                <div class="form-group">
+                    <button type="submit">Đăng bài</button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+
+
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2023</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
