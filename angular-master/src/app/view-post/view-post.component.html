@@ -1,0 +1,71 @@
+<div class="container p-5">
+  <div class="row">
+    <div class="col-8 d-flex flex-column gap-4">
+      <div>
+        <div class="card">
+          <div class="row no-gutters">
+            <div class="col-md-12">
+              <img class="card-img" src="{{currentPost.thumbnail}}" alt="Ảnh lỗi">
+            </div>
+            <div class="col-sm-7">
+              <div class="card-body h-100 d-flex flex-column justify-content-between">
+                <div>
+                  <h5 class="card-title">
+                    {{ currentPost.tieuDe }}
+                  </h5>
+                  <p class="card-text">{{currentPost.noiDung}}</p>
+                </div>
+
+                <small>{{currentPost.theLoai.theLoai}}</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-4 d-flex flex-column gap-4">
+      <div class="card">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item font-weight-bold">Tìm kiếm</li>
+          <li class="list-group-item">
+            <div class="row height d-flex justify-content-center align-items-center">
+              <div class="col-md-12">
+                <form class="search d-flex gap-2">
+                  <input type="text" class="form-control" placeholder="Nhập nội dung muốn tìm kiếm ..." name="search">
+                  <button type="submit" class="btn btn-primary">Search</button>
+                </form>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="card">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item font-weight-bold">Thể loại</li>
+          <li class="list-group-item">
+            <div class="row height d-flex justify-content-center align-items-center">
+              <div class="col-md-12" *ngFor="let theloai of theLoaiList">
+                <p><a class="link-opacity-100-hover" href="/List/{{theloai.code}}">{{theloai.theLoai}}</a></p>
+
+              </div>
+
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="card">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item font-weight-bold">Liên hệ</li>
+          <li class="list-group-item">
+            <div class="row height d-flex justify-content-center align-items-center">
+              <div class="col-md-12">
+                <p><a class="link-opacity-100-hover" href="#">Facebook</a></p>
+                <p><a class="link-opacity-100-hover" href="#">Gmail</a></p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

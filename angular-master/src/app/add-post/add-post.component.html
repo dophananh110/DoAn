@@ -1,0 +1,40 @@
+<div class="container d-flex justify-content-center p-5">
+  <div class="card col-8">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item text-center fw-bold fs-3 text">Đăng bài</li>
+      <li class="list-group-item">
+        <div class="row height d-flex justify-content-center align-items-center">
+          <div class="col-lg-12">
+            <form [formGroup]="postForm" (ngSubmit)="onSubmit()">
+              <div class="mb-3">
+                <label for="TieuDe" class="form-label">Tiêu đề</label>
+                <input type="text" class="form-control" id="title" formControlName="tieuDe">
+              </div>
+              <div class="mb-3">
+                <label for="NoiDung" class="form-label">Nội dung</label>
+                <textarea class="form-control" id="content" rows="5" formControlName="noiDung"></textarea>
+              </div>
+              <div class="mb-3">
+                <label for="MoTa" class="form-label">Mô tả</label>
+                <input type="text" class="form-control" id="MoTa" formControlName="moTa">
+              </div>
+              <div class="mb-3" formGroupName="theLoai">
+                <label for="the_loai_id" class="form-label">Thể loại</label>
+                <select class="form-select" formControlName="id">
+                  <option *ngFor="let theloai of theLoaiList" [value]="theloai.id">
+                    {{ theloai.theLoai }}
+                  </option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="Thumbnail" class="form-label">Ảnh bìa</label>
+                <input type="text" class="form-control" id="Thumbnail" formControlName="thumbnail">
+              </div>
+              <button type="submit" class="btn btn-primary" [disabled]="postForm.invalid">Đăng bài</button>
+            </form>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
